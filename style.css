@@ -1,0 +1,103 @@
+body{
+    background-position: center;
+    background-size: cover;}
+
+    .bottle_test_image{
+        background-color: aqua;
+        border-radius: 10px;
+    }
+
+    .pillow_test_image{
+        background-color: chartreuse;
+        border-radius: 10px;
+    }
+
+    .books_test_image{
+        background-color:chocolate;
+        border-radius: 10px;   
+    }
+
+    .bowl_test_image{
+        background-color:greenyellow;
+        border-radius: 10px; 
+    }
+
+    .glass_test_image{
+        background-color:cornflowerblue;
+        border-radius: 10px; 
+    }
+
+    .pencil_test_image{
+        background-color:hotpink;
+        border-radius: 10px; 
+    }
+
+    .spoon_test_image{
+        background-color:lightcoral;
+        border-radius: 10px; 
+    }
+
+    .stapler_test_image{
+        background-color:lightseagreen;
+        border-radius: 10px; 
+    }
+
+    .headphones_test_image{
+        background-color:lightslategrey;
+        border-radius: 10px; 
+    }
+
+    .phones_test_image{
+        background-color:magenta;
+        border-radius: 10px; 
+    }
+
+    .pencil_test_image{
+        background-color:mediumpurple;
+        border-radius: 10px; 
+    }
+
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    .btn-info{
+        border-radius: 10px;
+        width: 15%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .btn-danger{
+        border-radius: 10px;
+        width: 15%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .btn-primary{
+        border-radius: 10px;
+        width: 55%; 
+        text-align: center;
+        margin: auto;
+    }
+
+    #vs{
+        border-radius: 10px;
+        width: 55%; 
+        text-align: center;
+        margin: auto;  
+    }
+
+    .copy_right_footer{
+        width: 100%;
+        font-size: 15px;
+        position:fixed;
+        bottom: 0%;
+        text-align:center;
+        background-color: blueviolet;
+        color: cornsilk;
+        line-height:2;
+      }

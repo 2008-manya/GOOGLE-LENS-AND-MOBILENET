@@ -1,0 +1,340 @@
+<html>
+<head>
+  <title>Case Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+
+
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body background="background.jfif">
+
+    <h1 class="btn-primary" style="font-family: 'Patrick Hand SC', cursive;"> CASE STUDY BETWEEN GOOGLE LENS VS MOBILENET</h1>
+    <br>
+    <h3 class="btn-info" style="font-family: 'Patrick Hand SC', cursive;">GOOGLE LENS</h3>
+    <h2 style="font-family: 'Patrick Hand SC', cursive;" id="vs">VS</h2>
+    <h3 class="btn-danger" style="font-family: 'Patrick Hand SC', cursive;">MOBILENET</h3>
+    <br>
+    <br>
+
+
+    <center>
+    <ol>
+        <div class="bottle_test_image col-xs-12">
+            
+            <li class="col-sm-4 col-xs-12"
+            <b style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;">TEST IMAGE-</b>
+            <br>
+            <br>
+            <img src = "bottle.jfif" class="img responsive" style="width: 300px; height: 300px; ">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;"> 
+                Output on <b>GOOGLE LENS</b>-
+            </h5>
+
+            <h5 class = "col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;">
+                Output on <b>MOBILENET MODEL</b>-
+            </h5>
+
+            <div class="mini_result" class="col-xs-12" style="font-family: 'Patrick Hand SC', cursive;">
+                <h4 style="font-family: 'Patrick Hand', cursive; font-size: 20px;">Result -</h4>
+                <hr>
+                <h4></h4>
+            </div>
+
+        </div>
+<br>
+<br>
+
+
+
+        <div class="pillow_test_image col-xs-12">
+            
+            <li class="col-sm-4 col-xs-12"
+            <b style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;" >TEST IMAGE-</b>
+            <br>
+            <br>
+            <img src = "pillow.jfif" class="img responsive" style="width: 300px; height: 300px; ">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;"> 
+                Output on <b>GOOGLE LENS</b>-
+            </h5>
+
+            <h5 class = "col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;">
+                Output on <b>MOBILENET MODEL</b>-
+            </h5>
+
+            <div class="mini_result" class="col-xs-12" style="font-family: 'Patrick Hand SC', cursive;">
+                <h4 style="font-family: 'Patrick Hand', cursive; font-size: 20px;">Result -</h4>
+                <hr>
+                <h4></h4>
+            </div>
+
+        </div>
+
+<br>
+<br>
+
+
+
+        <div class="books_test_image col-xs-12">
+            
+            <li class="col-sm-4 col-xs-12"
+            <b style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;" >TEST IMAGE-</b>
+            <br>
+            <br>
+            <img src = "books.jfif" class="img responsive" style="width: 300px; height: 300px; ">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;"> 
+                Output on <b>GOOGLE LENS</b>-
+            </h5>
+
+            <h5 class = "col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;">
+                Output on <b>MOBILENET MODEL</b>-
+            </h5>
+
+            <div class="mini_result" class="col-xs-12" style="font-family: 'Patrick Hand SC', cursive;">
+                <h4 style="font-family: 'Patrick Hand', cursive; font-size: 20px;">Result -</h4>
+                <hr>
+                <h4></h4>
+            </div>
+
+        </div>
+
+<br>
+<br>
+
+
+
+        <div class="bowl_test_image col-xs-12">
+            
+            <li class="col-sm-4 col-xs-12"
+            <b style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;" >TEST IMAGE-</b>
+            <br>
+            <br>
+            <img src = "bowl.jfif" class="img responsive" style="width: 300px; height: 300px; ">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;"> 
+                Output on <b>GOOGLE LENS</b>-
+            </h5>
+
+            <h5 class = "col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;">
+                Output on <b>MOBILENET MODEL</b>-
+            </h5>
+
+            <div class="mini_result" class="col-xs-12" style="font-family: 'Patrick Hand SC', cursive;">
+                <h4 style="font-family: 'Patrick Hand', cursive; font-size: 20px;">Result -</h4>
+                <hr>
+                <h4></h4>
+            </div>
+
+        </div>
+
+<br>
+<br>
+
+
+
+        <div class="glass_test_image col-xs-12">
+            
+            <li class="col-sm-4 col-xs-12"
+            <b style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;" >TEST IMAGE-</b>
+            <br>
+            <br>
+            <img src = "glass.jfif" class="img responsive" style="width: 300px; height: 300px; ">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;"> 
+                Output on <b>GOOGLE LENS</b>-
+            </h5>
+
+            <h5 class = "col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;">
+                Output on <b>MOBILENET MODEL</b>-
+            </h5>
+
+            <div class="mini_result" class="col-xs-12" style="font-family: 'Patrick Hand SC', cursive;">
+                <h4 style="font-family: 'Patrick Hand', cursive; font-size: 20px;">Result -</h4>
+                <hr>
+                <h4></h4>
+            </div>
+
+        </div>
+
+
+<br>
+<br>
+
+
+
+        <div class="pencil_test_image col-xs-12">
+            
+            <li class="col-sm-4 col-xs-12"
+            <b style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;" >TEST IMAGE-</b>
+            <br>
+            <br>
+            <img src = "pencil.jfif" class="img responsive" style="width: 300px; height: 300px; ">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;"> 
+                Output on <b>GOOGLE LENS</b>-
+            </h5>
+
+            <h5 class = "col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;">
+                Output on <b>MOBILENET MODEL</b>-
+            </h5>
+
+            <div class="mini_result" class="col-xs-12" style="font-family: 'Patrick Hand SC', cursive;">
+                <h4 style="font-family: 'Patrick Hand', cursive; font-size: 20px;">Result -</h4>
+                <hr>
+                <h4></h4>
+            </div>
+
+        </div>
+
+<br>
+<br>
+
+
+
+        <div class="spoon_test_image col-xs-12">
+            
+            <li class="col-sm-4 col-xs-12"
+            <b style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;" >TEST IMAGE-</b>
+            <br>
+            <br>
+            <img src = "spoon.jfif" class="img responsive" style="width: 300px; height: 300px; ">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;"> 
+                Output on <b>GOOGLE LENS</b>-
+            </h5>
+
+            <h5 class = "col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;">
+                Output on <b>MOBILENET MODEL</b>-
+            </h5>
+
+            <div class="mini_result" class="col-xs-12" style="font-family: 'Patrick Hand SC', cursive;">
+                <h4 style="font-family: 'Patrick Hand', cursive; font-size: 20px;">Result -</h4>
+                <hr>
+                <h4></h4>
+            </div>
+
+        </div>
+
+<br>
+<br>
+
+
+
+        <div class="stapler_test_image col-xs-12">
+            
+            <li class="col-sm-4 col-xs-12"
+            <b style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;" >TEST IMAGE-</b>
+            <br>
+            <br>
+            <img src = "stapler.jfif" class="img responsive" style="width: 300px; height: 300px; ">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;"> 
+                Output on <b>GOOGLE LENS</b>-
+            </h5>
+
+            <h5 class = "col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;">
+                Output on <b>MOBILENET MODEL</b>-
+            </h5>
+
+            <div class="mini_result" class="col-xs-12" style="font-family: 'Patrick Hand SC', cursive;">
+                <h4 style="font-family: 'Patrick Hand', cursive; font-size: 20px;">Result -</h4>
+                <hr>
+                <h4></h4>
+            </div>
+
+        </div>
+
+<br>
+<br>
+
+
+
+        <div class="headphones_test_image col-xs-12">
+            
+            <li class="col-sm-4 col-xs-12"
+            <b style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;" >TEST IMAGE-</b>
+            <br>
+            <br>
+            <img src = "headphones.jfif" class="img responsive" style="width: 300px; height: 300px; ">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;"> 
+                Output on <b>GOOGLE LENS</b>-
+            </h5>
+
+            <h5 class = "col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;">
+                Output on <b>MOBILENET MODEL</b>-
+            </h5>
+
+            <div class="mini_result" class="col-xs-12" style="font-family: 'Patrick Hand SC', cursive;">
+                <h4 style="font-family: 'Patrick Hand', cursive; font-size: 20px;">Result -</h4>
+                <hr>
+                <h4></h4>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        
+        
+        
+                <div class="phones_test_image col-xs-12">
+                    
+                    <li class="col-sm-4 col-xs-12"
+                    <b style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;" >TEST IMAGE-</b>
+                    <br>
+                    <br>
+                    <img src = "phone.jpg" class="img responsive" style="width: 300px; height: 300px; ">
+                    </li>
+        
+                    <h5 class="col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;"> 
+                        Output on <b>GOOGLE LENS</b>-
+                    </h5>
+        
+                    <h5 class = "col-sm-4 col-xs-12" style="font-family: 'Patrick Hand SC', cursive; font-size: 20px;">
+                        Output on <b>MOBILENET MODEL</b>-
+                    </h5>
+        
+                    <div class="mini_result" class="col-xs-12" style="font-family: 'Patrick Hand SC', cursive;">
+                        <h4 style="font-family: 'Patrick Hand', cursive; font-size: 20px;">Result -</h4>
+                        <hr>
+                        <h4></h4>
+                    </div>
+        
+                </div>
+    </ol>
+</center>
+
+
+<div class="copy_right_footer" style="font-family: 'Patrick Hand SC', cursive;">
+    <h3>Develpoed By Manya Lalani </h3>
+  </div>
+
+
+  </body>
